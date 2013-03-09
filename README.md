@@ -8,27 +8,34 @@ More info coming soon.
 ##Install
 
 ```bash
-npm install kache
+$ npm install kache
 ```
 
-##Usage
+##Example Usage
 
-```bash
-$ var Kache = require('kache');
+```javascript
 
+// Include the module
+var kache = require('kache');
+
+// Set some options - these are the defaults
 var options = {
     start: true     // Start a timer to remove old cache entries.
   , interval: 300   // Time in seconds between each scan.
 };
 
-var cache = new Kache(options);
+// Create a new cache
+var cache = kache(options);
 
-cache.set('hello', 'world', 30); // Cache for 30 seconds
+// Set 'hello' to 'hello world' - expires in 3 seconds
+cache.set('hello', 'hello world', 3);
 
-cache.get('hello'); // 'world'
+// Get 'hello' from the cache and log to console
+console.log(cache.get('hello')); // Outputs: 'hello world'
 
+// Wait 5 seconds and try again. The item will have expired and is no longer available.
 setTimeout(function() {
-  cache.get('hello'); // null
+  console.log(cache.get('hello')); // null
 }, 5000);
 ```
 
