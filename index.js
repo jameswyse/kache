@@ -1,5 +1,4 @@
 /**
- *  Kache
  *  Kache - A Simple Memory Cache
  *  Version 0.0.2
  *  https://github.com/lemoncreative/kache/
@@ -14,7 +13,7 @@ var EventEmitter = require('events').EventEmitter
   , _            = require('underscore');
 
 /**
- * Kasch Constructor
+ * Kache Constructor
  *
  * @param {Object} options Options
  * @param {Array}  payload An array of Objects to preload the cache with.
