@@ -1,6 +1,6 @@
 {
   "name": "kache",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple memory cache for Node",
   "main": "index.js",
   "repository": {
