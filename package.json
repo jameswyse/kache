@@ -1,0 +1,24 @@
+{
+  "name": "kache",
+  "version": "0.0.1",
+  "description": "A simple memory cache for Node",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "http://www.github.com/lemoncreative/kache"
+  },
+  "keywords": [
+    "node",
+    "cache",
+    "kache",
+    "memory",
+    "lru"
+  ],
+  "author": "James Wyse",
+  "license": "MIT",
+  "dependencies": {
+    "inherits": "~1.0.0",
+    "debug": "~0.7.2",
+    "underscore": "~1.4.4"
+  }
+}
