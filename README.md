@@ -13,8 +13,8 @@ npm install kache
 
 ##Usage
 
-```javascript
-var Kache = require('kache');
+```bash
+$ var Kache = require('kache');
 
 var options = {
     start: true     // Start a timer to remove old cache entries.
