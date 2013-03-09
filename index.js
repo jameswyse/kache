@@ -1,7 +1,7 @@
 /**
  *  Kache
  *  Kache - A Simple Memory Cache
- *  Version 0.0.1
+ *  Version 0.0.2
  *  https://github.com/lemoncreative/kache/
  */
 
@@ -289,4 +289,8 @@ Kache.prototype.stop = function stop() {
   return this;
 };
 
-module.exports = Kache;
+function createCache(options) {
+  return new Kache(options);
+}
+
+module.exports = createCache;
