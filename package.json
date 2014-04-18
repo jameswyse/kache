@@ -1,11 +1,25 @@
 {
   "name": "kache",
-  "version": "0.0.2",
-  "description": "A simple memory cache for Node",
-  "main": "index.js",
+  "description": "A simple memory cache for node.js",
+  "version": "0.1.0",
+  "license": "MIT",
+  "author": {
+    "name": "James Wyse",
+    "email": "james@jameswyse.net"
+  },
+  "homepage": "https://www.github.com/jameswyse/kache",
   "repository": {
     "type": "git",
-    "url": "http://www.github.com/lemoncreative/kache"
+    "url": "https://www.github.com/jameswyse/kache.git"
+  },
+  "bugs": {
+    "url": "https://www.github.com/jameswyse/kache/issues",
+    "email": "james@jameswyse.net"
+  },
+  "main": "lib/Kache.js",
+  "readmeFilename": "README.md",
+  "scripts": {
+    "test": ""
   },
   "keywords": [
     "node",
@@ -14,11 +28,10 @@
     "memory",
     "lru"
   ],
-  "author": "James Wyse",
-  "license": "MIT",
   "dependencies": {
-    "inherits": "~1.0.0",
-    "debug": "~0.7.2",
-    "underscore": "~1.4.4"
+    "debug": "^0.8.0",
+    "lodash": "^2.4.1"
+  },
+  "devDependencies": {
   }
 }
